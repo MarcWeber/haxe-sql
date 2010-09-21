@@ -49,3 +49,17 @@ Examples:
   resuult: UPDATE table SET value = 10 WHERE id in ("1","2","3","4")
 
 Now start browsing db/DBConnection.hx to learn about all funcctions
+
+== pieces taken from ==
+
+nPostgres:
+  original upstream: http://code.google.com/p/npostgres (taken from rev 5)
+  original author: Lee McColl Sylvester also modified by: Max S
+  license & files: (neko/db/Postgresql.hx, npostgres/) see npostgres/LICENSE.txt
+
+  It was also found on lib.haxe.org (Version 0.2.0) when it was included into
+  this repository. No differences were found in important files (Makefile,
+  Postgresql.hx, postgres.c)
+
+  Reason for inclusion: I don't want to maintain / commit to two repositories -
+  Maybe I change the API in the future.
