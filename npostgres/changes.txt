@@ -1,0 +1,23 @@
+nPostgres Changes List
+
+0.1.0
+===============
+Completed .hx wrapper files
+Added changes list
+Added to haXeLib
+
+
+0.2.0
+===============
+Bugfixes
+Linux Makefile
+PostgreResultSet.getErrorMessage() for determining query result. Returns empty string on success.
+
+...
+===============
+Marc Weber: 
+ - moving Postgresql.hx into neko/db/Postgresql.hx
+ - adding license file (npostgres/LICENSE.txt) to npostgres which was found in
+   the distribution of 0.2.0 on lib.haxe.org
+
+IN FUTURE: have a look at git history
