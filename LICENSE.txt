@@ -1,0 +1,3 @@
+npostgres see npostgres/LICENSE.txt (LGPL or BSD)
+my code php/db/Postgresql.hx db/DBConnection.hx db/DBResultSet.hx
+same as Std code (2-clause BSD)
