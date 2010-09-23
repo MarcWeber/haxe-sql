@@ -146,6 +146,16 @@ private class PostgresConnection implements Connection {
 		return "E'"+escape( s )+"'";
 	}
 
+	public function addValue( s : StringBuf, v : Dynamic ) {
+		if (Std.is(v, Int))
+			s.add(v);
+		else if (Std.is(v, Bool))
+			s.add(v ? "'t'" : "'f'"); // y yes 1 TRUE would be accepted as well
+		else
+			s.add(quote(Std.string(v)));
+	}
+
+
 	public function lastInsertId() {
 		return id;
 	}

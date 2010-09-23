@@ -12,6 +12,7 @@
 == differences to STD ==
 
 - quoteName. You can't use the Std quote function for all backends.
+- quote accepts dynamic (so that int can be passed to cnx.quote as String)
 - substPH function providing DSL See below
 - result sets should be freed.
   Thus this interface defines query wit a callback function.

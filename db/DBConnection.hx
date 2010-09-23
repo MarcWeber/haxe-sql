@@ -281,8 +281,11 @@ class DBConnection {
   public inline function escape( s : String ){
     return cnx.escape(s);
   }
-  public inline function quote( s : String ) : String {
-    return cnx.quote(s);
+  public inline function quote( s : Dynamic ) : String {
+    return cnx.quote(
+        Std.is(s,Int)
+         ? Std.string(s)
+         : s);
   }
   public inline function addValue( s : StringBuf, v : Dynamic ) : Void {
     cnx.addValue(s,v);
